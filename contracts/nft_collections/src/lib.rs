@@ -18,7 +18,6 @@ pub struct EventInfo {
     pub creator_fee_bps: u32,
     pub event_metadata: String,
     pub payment_token: Address,
-    // --- NEW FIELDS ---
     pub name: String,
     pub symbol: String,
 }
@@ -496,3 +495,5 @@ impl TicketMarketplace {
             .set(&DataKey::UserTickets(user.clone()), &new_tickets);
     }
 }
+
+mod test;

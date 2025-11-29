@@ -4,8 +4,6 @@ use soroban_sdk::{
      Val, Vec,
 };
 
-// Define the module structure if the NFT code is in a separate file in the same crate
-mod nft_collection;
 
 #[derive(Clone)]
 #[contracttype]
@@ -219,4 +217,3 @@ impl TicketFactory {
             .expect("Factory not initialized")
     }
 }
-mod test;

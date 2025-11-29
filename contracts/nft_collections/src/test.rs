@@ -2,8 +2,8 @@
 mod test {
     use super::*;
     use soroban_sdk::{testutils::{Address as _, Events}, token, Address, Env, String};
-     use crate::nft_collection::TicketMarketplaceClient;
-     use crate::nft_collection::TicketMarketplace;
+     use crate::TicketMarketplaceClient;
+     use crate::TicketMarketplace;
 
     // Helper function to setup the test environment
     fn setup_test<'a>(
